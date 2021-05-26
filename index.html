@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="main.css" />
+        <title>Practica 02</title>
+        <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <!-- HEADER -->
@@ -14,7 +14,44 @@
             <nav class="menu"></nav>
         </header>
         <!-- MAIN -->
-        <main></main>
+        <main>
+            <section class="main__box">
+                <h1 class="titulo">Bienvenido</h1>
+                <p>Como si estuvieras en tu casa</p>
+                <section class="main__imgsPlace">
+
+                    <picture>
+                        <source srcset="./img/desktop/grass.jpg 1x,
+                        ./img/desktop/grass@2x.jpg 2x " 
+                        media="(min-width:1000px)">
+                        <source srcset="./img/smartphone/grass.jpg 1x,
+                        ./img/smartphone/grass@2x.jpg 2x,
+                        ./img/smartphone/grass@3x.jpg 3x " 
+                        media="(min-width:320px)">
+    
+                        <img src="" alt="">
+                    </picture>
+                <picture>
+                    
+                    <source srcset="./img/desktop/berry.jpg 1x,
+                    ./img/desktop/berry@2x.jpg 2x" 
+                    media="(min-width:1000px)">
+                    
+
+                    <source srcset="./img/smartphone/berry.jpg 1x,
+                    ./img/smartphone/berry@2x.jpg 2x,
+                    ./img/smartphone/berry@3x.jpg 3x " 
+                    media="(min-width:320px)">
+
+                    
+                    <img src="" alt="">
+                </picture>
+
+            </section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non praesent arcu tempus ac nisl integer tellus urna.</p>
+                <article class="btn">Leer más..</article>
+            </section>
+        </main>
         <!-- FOOTER -->
         <footer>
             <h6 class="copy">&copy;Copyright</h6>

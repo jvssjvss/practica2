@@ -7,9 +7,10 @@
     font-size: 1.125rem;
     font-weight: 800;
     text-transform: uppercase;
-    
-    &amarillo{
+    border-radius: 20px;
+    align-self: flex-end;
+
         color: map-get($colores, negro);
         background-color: map-get($colores, amarillo);
-    }
+
 }

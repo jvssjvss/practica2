@@ -2,6 +2,26 @@
 /* ********** */
 
 // Grids que unifican Figma con Sass
+body{
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgba(0, 102, 255, 0.36) 0%, rgba(158, 0, 255, 0) 100%);
+    background-repeat: no-repeat
+    ;}
+
+.main__box{
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #939393;
+    border-radius: 30px;
+}
+.main__imgsPlace{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 100%;
+}
 
 // gridMQ
     // Grid para Smartphone
@@ -12,17 +32,18 @@
             grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 16px;
         }
+
+        .main__box{
+
+            padding: 16px;
+            width: 100%;
+
+
+        }
+
+
     }
 
-    // Grid para iPad
-    @media only screen and (min-width: map-get($breakpoints, ipad)) and (orientation: portrait) {
-        .contenedor {
-            padding: 0 24px;
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-column-gap: 24px;
-        }
-    }
 
     // Grid para Desktop
     @media only screen and (min-width: map-get($breakpoints, desktop)) {
@@ -32,5 +53,31 @@
             grid-template-columns: repeat(12, 1fr);
             grid-column-gap: 24px;
         }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .main__box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 647px;
+
+        }
+
+        .main__box::before{
+            content: url(../img/desktop/miniForm.svg);
+            transform: translateX(-40%) translateY(110%);
+
+        }
+        .main__box::after{
+            content: url(../img/desktop/forkKnife.svg);
+            transform: translateX(105%) translateY(-100%);
+
+        }
+
     }
 
